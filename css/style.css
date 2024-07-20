@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+.cardForm {
+  font-family: Audiowide, sans-serif;
+  font-size: 4vw;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0;
+}
+.row {
+  display: flex;
+  gap: 0;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #777;
+  cursor: pointer;
+  position: relative;
+  flex: 1 1 auto;
+}
+.clubs.selected {
+  background-color: #3f0;
+  color: #fff;
+}
+.diamonds.selected {
+  background-color: #ff4b4b;
+  color: #fff;
+}
+.hearts.selected {
+  background-color: #d40101;
+  color: #fff;
+}
+.spades.selected {
+  background-color: black;
+  color: #fff;
+}
+.clubs {
+  color: #3f0;
+}
+.diamonds {
+  color: #ff4b4b;
+}
+.hearts {
+  color: #d40101;
+}
+.spades {
+  color: black;
+}
+.grid-item input {
+  display: none;
+}
