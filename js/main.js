@@ -8,6 +8,7 @@ const ranks = ["T", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
 const cardGrid = document.getElementById("cardGrid")
 const cardForm = document.getElementById("cardForm")
+const result = document.getElementById("result")
 
 function generateGrid(activeValues = []) {
   for (const [suit, symbol] of Object.entries(suits)) {
@@ -63,6 +64,7 @@ cardForm.addEventListener("submit", (event) => {
   })
 
   console.log("Selected values:", selectedValues)
+  result.innerHTML = selectedValues
 })
 
 generateGrid(["7_clubs", "T_hearts", "8_diamonds", "12_spades"])
